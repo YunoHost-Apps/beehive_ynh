@@ -135,6 +135,13 @@ ynh_add_systemd_config --service="$app" --template="systemd.service" --others_va
 chown -R $app: $final_path
 
 #=================================================
+# SETUP LOGROTATE
+#=================================================
+ynh_script_progression --message="Configuring log rotation..."  --weight=1
+
+ynh_use_logrotate
+
+#=================================================
 # INTEGRATE SERVICE IN YUNOHOST
 #=================================================
 ynh_script_progression --message="Integrating service in YunoHost..."  --weight=1

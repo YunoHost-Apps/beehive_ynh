@@ -79,6 +79,8 @@ then
 	ynh_script_progression --message="Upgrading source files..."  --weight=1
 
 	# Download, check integrity, uncompress and patch the source from app.src
+	export PATH=$PATH:/usr/local/go/bin
+	export GOPATH=/usr/local/go/bin
 	pushd "$final_path"
 		git pull
 		make
