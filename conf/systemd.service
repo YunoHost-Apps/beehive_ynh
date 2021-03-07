@@ -1,0 +1,18 @@
+[Unit]
+Description=__APP__ service
+After=network.target
+
+[Service]
+Type=simple
+User=__APP__
+Group=__APP__
+WorkingDirectory=__FINALPATH__/
+ExecStart=__FINALPATH__/beehive -bind 127.0.0.1:__PORT__  -canonicalurl __DOMAIN____PATH__
+Restart=always
+StandardOutput=/var/log/__APP__/__APP__.log
+StandardError=/var/log/__APP__/__APP__.log
+SyslogIdentifier=__APP__
+Environment=GOPATH=/usr/local/go/bin
+
+[Install]
+WantedBy=multi-user.target
