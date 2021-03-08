@@ -159,6 +159,16 @@ ynh_script_progression --message="Starting a systemd service..."  --weight=1
 ynh_systemd_action --service_name=$app --action="start" --log_path="/var/log/$app/$app.log"
 
 #=================================================
+# SETUP SSOWAT
+#=================================================
+ynh_script_progression --message="Configuring permissions..."  --weight=1
+
+
+# Only the admin can access the admin panel of the app (if the app has an admin panel)
+ynh_permission_update --permission "main" --remove all_users --add $admin
+
+
+#=================================================
 # RELOAD NGINX
 #=================================================
 ynh_script_progression --message="Reloading NGINX web server..."  --weight=1
