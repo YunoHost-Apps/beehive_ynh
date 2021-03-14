@@ -76,7 +76,8 @@ ynh_install_app_dependencies $pkg_dependencies
 tmpdir="$(ynh_smart_mktemp)"
 pushd "$tmpdir"
 	wget https://golang.org/dl/go$GO_VERSION.linux-$architecture.tar.gz
-	rm -rf /usr/local/go && tar -C /usr/local -xzf go$GO_VERSION.linux-$architecture.tar.gz
+	ynh_secure_remove  /usr/local/go
+	tar -C /usr/local -xzf go$GO_VERSION.linux-$architecture.tar.gz
 popd
 ynh_secure_remove "$tmpdir"
 export PATH=$PATH:/usr/local/go/bin
