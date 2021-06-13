@@ -12,7 +12,7 @@ Restart=always
 StandardOutput=/var/log/__APP__/__APP__.log
 StandardError=/var/log/__APP__/__APP__.log
 SyslogIdentifier=__APP__
-Environment=GOPATH=/usr/local/go/bin
+#Environment=GOPATH=/usr/local/go/bin
 
 [Install]
 WantedBy=multi-user.target

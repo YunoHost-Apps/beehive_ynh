@@ -5,14 +5,14 @@
     "description": {
         "en": "A flexible event/agent & automation system "
     },
-    "version": "28.01.2021~ynh1",
+    "version": "0.4.0~ynh1",
     "url": "https://github.com/muesli/beehive",
     "license": "AGPL-1.0-or-later",
     "maintainer": {
         "name": "Anmol Sharma"
     },
     "requirements": {
-        "yunohost": ">= 4.1.3"
+        "yunohost": ">= 4.2.4"
     },
     "multi_instance": true,
     "services": [

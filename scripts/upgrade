@@ -58,16 +58,21 @@ ynh_systemd_action --service_name=$app --action="stop" --log_path="/var/log/$app
 
 if [ "$upgrade_type" == "UPGRADE_APP" ]
 then
-	ynh_script_progression --message="Upgrading source files..."  --weight=1
+	ynh_script_progression --message="Upgrading source files..." --time --weight=1
 
 	# Download, check integrity, uncompress and patch the source from app.src
-	export PATH=$PATH:/usr/local/go/bin
-	export GOPATH=/usr/local/go/bin
-	pushd "$final_path"
-		git pull
-		make
-	popd
+	ynh_setup_source --dest_dir="$final_path"
 fi
+
+# FIXME: this should be managed by the core in the future
+# Here, as a packager, you may have to tweak the ownerhsip/permissions
+# such that the appropriate users (e.g. maybe www-data) can access
+# files in some cases.
+# But FOR THE LOVE OF GOD, do not allow r/x for "others" on the entire folder -
+# this will be treated as a security issue.
+chmod 750 "$final_path"
+chmod -R o-rwx "$final_path"
+chown -R $app:www-data "$final_path"
 
 #=================================================
 # NGINX CONFIGURATION
@@ -92,13 +97,6 @@ ynh_script_progression --message="Making sure dedicated system user exists..."  
 # Create a dedicated user (if not existing)
 ynh_system_user_create --username=$app
 
-
-#=================================================
-# SPECIFIC UPGRADE
-#=================================================
-# ...
-#=================================================
-
 #=================================================
 # SETUP SYSTEMD
 #=================================================
@@ -106,7 +104,6 @@ ynh_script_progression --message="Upgrading systemd configuration..."  --weight=
 
 # Create a dedicated systemd config
 ynh_add_systemd_config --service="$app" --template="systemd.service" --others_var="port domain"
-
 
 #=================================================
 # GENERIC FINALIZATION
@@ -144,10 +141,8 @@ ynh_systemd_action --service_name=$app --action="start" --log_path="/var/log/$ap
 #=================================================
 ynh_script_progression --message="Configuring permissions..."  --weight=1
 
-
 # Only the admin can access the admin panel of the app (if the app has an admin panel)
 ynh_permission_update --permission "main" --remove all_users --add $admin
-
 
 #=================================================
 # RELOAD NGINX
