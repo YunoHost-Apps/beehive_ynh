@@ -23,17 +23,11 @@
             {
                 "name": "domain",
                 "type": "domain",
-                "ask": {
-                    "en": "Choose a domain name for Beehive"
-                },
                 "example": "example.com"
             },
             {
                 "name": "admin",
                 "type": "user",
-                "ask": {
-                    "en": "Choose an admin user"
-                },
                 "example": "johndoe"
             }
         ]

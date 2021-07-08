@@ -36,7 +36,6 @@ domain=$(ynh_app_setting_get --app=$app --key=domain)
 #=================================================
 ynh_print_info --message="Declaring files to be backed up..."
 
-
 #=================================================
 # BACKUP THE APP MAIN DIR
 #=================================================
