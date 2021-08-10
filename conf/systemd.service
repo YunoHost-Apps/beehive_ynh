@@ -7,13 +7,12 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__FINALPATH__/
-ExecStart=__FINALPATH__/beehive -bind 127.0.0.1:__PORT__  -canonicalurl https://__DOMAIN__ -config __FINALPATH__/__APP__.conf
+ExecStart=__FINALPATH__/beehive -bind "127.0.0.1:__PORT__"  -canonicalurl "https://__DOMAIN__"
 Restart=always
 StandardOutput=/var/log/__APP__/__APP__.log
 StandardError=/var/log/__APP__/__APP__.log
 SyslogIdentifier=__APP__
 WatchdogSec=30s
-#Environment=GOPATH=/usr/local/go/bin
 
 [Install]
 WantedBy=multi-user.target
