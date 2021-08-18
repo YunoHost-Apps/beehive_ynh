@@ -26,7 +26,6 @@ port=$(ynh_app_setting_get --app=$app --key=port)
 # CHECK VERSION
 #=================================================
 
-
 upgrade_type=$(ynh_check_app_version_changed)
 
 #=================================================
