@@ -7,8 +7,7 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__FINALPATH__/
-ExecStart=__FINALPATH__/beehive --config __FINALPATH__/beehive.conf
-#-bind "127.0.0.1:__PORT__"  -canonicalurl "https://__DOMAIN__"
+ExecStart=__FINALPATH__/beehive --config __FINALPATH__/beehive.conf -bind "127.0.0.1:__PORT__" -canonicalurl "https://__DOMAIN__"
 Restart=always
 #StandardOutput=/var/log/__APP__/__APP__.log
 #StandardError=/var/log/__APP__/__APP__.log
