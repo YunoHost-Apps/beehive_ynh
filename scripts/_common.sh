@@ -3,53 +3,33 @@
 #=================================================
 # COMMON VARIABLES
 #=================================================
-GO_VERSION=1.16
-# dependencies used by the app
-pkg_dependencies="wget"
 
 #=================================================
 # PERSONAL HELPERS
 #=================================================
 
-if [ -n "$(uname -m | grep arm64)" ] || [ -n "$(uname -m | grep aarch64)" ]; then
-	architecture="arm64"
-elif [ -n "$(uname -m | grep 64)" ]; then
-	architecture="amd64"
-else
-	ynh_die "Unable to detect your achitecture, please open a bug describing \
-        your hardware and the result of the command \"uname -m\"." 1
-fi
+# Check the architecture
+#
+# example: architecture=$(ynh_detect_arch)
+#
+# usage: ynh_detect_arch
+#
+# Requires YunoHost version 2.2.4 or higher.
 
-ynh_smart_mktemp () {
-        local min_size="${1:-300}"
-        # Transform the minimum size from megabytes to kilobytes
-        min_size=$(( $min_size * 1024 ))
-
-        # Check if there's enough free space in a directory
-        is_there_enough_space () {
-                local free_space=$(df --output=avail "$1" | sed 1d)
-                test $free_space -ge $min_size
-        }
-
-        if is_there_enough_space /tmp; then
-                local tmpdir=/tmp
-        elif is_there_enough_space /var; then
-                local tmpdir=/var
-        elif is_there_enough_space /; then
-                local tmpdir=/
-        elif is_there_enough_space /home; then
-                local tmpdir=/home
+ynh_detect_arch(){
+        local architecture
+        if [ -n "$(uname -m | grep arm64)" ] || [ -n "$(uname -m | grep aarch64)" ]; then
+                architecture="arm64"              
+        elif [ -n "$(uname -m | grep 64)" ]; then
+                architecture="amd64"
+        elif [ -n "$(uname -m | grep 86)" ]; then
+                architecture="386"
+        elif [ -n "$(uname -m | grep armv7)" ]; then
+                architecture="arm7"
+        elif [ -n "$(uname -m | grep armv6)" ]; then
+                architecture="arm6"
         else
-		ynh_die "Insufficient free space to continue..."
+                architecture="unknown"
         fi
-
-        echo "$(mktemp --directory --tmpdir="$tmpdir")"
+        echo $architecture
 }
-
-#=================================================
-# EXPERIMENTAL HELPERS
-#=================================================
-
-#=================================================
-# FUTURE OFFICIAL HELPERS
-#=================================================
