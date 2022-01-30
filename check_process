@@ -2,7 +2,6 @@
 	; Manifest
 		domain="domain.tld"
 		admin="john"
-		port="8181"
 	; Checks
 		pkg_linter=1
 		setup_sub_dir=0

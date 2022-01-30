@@ -7,6 +7,11 @@
     },
     "version": "0.4.0~ynh1",
     "url": "https://github.com/muesli/beehive",
+    "upstream": {
+        "license": "AGPL-3.0-or-later",
+        "demo": "https://github.com/muesli/beehive/wiki/Available-Hives",
+        "code": "https://github.com/muesli/beehive"
+    },
     "license": "AGPL-1.0-or-later",
     "maintainer": {
         "name": "Anmol Sharma"
@@ -19,7 +24,7 @@
         "nginx"
     ],
     "arguments": {
-        "install" : [
+        "install": [
             {
                 "name": "domain",
                 "type": "domain"
