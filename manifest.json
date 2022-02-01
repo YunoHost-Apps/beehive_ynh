@@ -1,40 +1,37 @@
 {
-    "name": "beehive",
+    "name": "Beehive",
     "id": "beehive",
     "packaging_format": 1,
     "description": {
-        "en": "A flexible event/agent & automation system "
+        "en": "Flexible event/agent & automation system"
     },
-    "version": "28.01.2021~ynh1",
+    "version": "0.4.0~ynh1",
     "url": "https://github.com/muesli/beehive",
+    "upstream": {
+        "license": "AGPL-3.0-or-later",
+        "demo": "https://github.com/muesli/beehive/wiki/Available-Hives",
+        "code": "https://github.com/muesli/beehive"
+    },
     "license": "AGPL-1.0-or-later",
     "maintainer": {
-        "name": "anmol"
+        "name": "Anmol Sharma"
     },
     "requirements": {
-        "yunohost": ">= 4.1.3"
+        "yunohost": ">= 4.3.0"
     },
     "multi_instance": true,
     "services": [
         "nginx"
     ],
     "arguments": {
-        "install" : [
+        "install": [
             {
                 "name": "domain",
-                "type": "domain",
-                "ask": {
-                    "en": "Choose a domain name for Beehive"
-                },
-                "example": "example.com"
+                "type": "domain"
             },
             {
                 "name": "admin",
-                "type": "user",
-                "ask": {
-                    "en": "Choose an admin user"
-                },
-                "example": "johndoe"
+                "type": "user"
             }
         ]
     }
