@@ -13,7 +13,7 @@
         "code": "https://github.com/muesli/beehive",
         "cpe": "cpe:2.3:a:beehive_forum:beehive_forum"
     },
-    "license": "AGPL-1.0-or-later",
+    "license": "AGPL-3.0-or-later",
     "maintainer": {
         "name": "Anmol Sharma"
     },
