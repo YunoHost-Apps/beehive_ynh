@@ -5,7 +5,7 @@ It shall NOT be edited by hand.
 
 # Beehive for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/beehive.svg)](https://dash.yunohost.org/appci/app/beehive) ![](https://ci-apps.yunohost.org/ci/badges/beehive.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/beehive.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/beehive.svg)](https://dash.yunohost.org/appci/app/beehive) ![Working status](https://ci-apps.yunohost.org/ci/badges/beehive.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/beehive.maintain.svg)  
 [![Install Beehive with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=beehive)
 
 *[Lire ce readme en français.](./README_fr.md)*
@@ -27,29 +27,31 @@ Beehive is an event and agent system, which allows you to create your own agents
 - Notify you when a stock's price drops below a certain value
 
 
-**Shipped version:** 0.4.0~ynh1
+**Shipped version:** 0.4.0~ynh2
+
 
 **Demo:** https://github.com/muesli/beehive/wiki/Available-Hives
 
 ## Screenshots
 
-![](./doc/screenshots/screenshot1.gif)
+![Screenshot of Beehive](./doc/screenshots/screenshot1.gif)
 
 ## Documentation and resources
 
-* Upstream app code repository: https://github.com/muesli/beehive
-* YunoHost documentation for this app: https://yunohost.org/app_beehive
-* Report a bug: https://github.com/YunoHost-Apps/beehive_ynh/issues
+* Upstream app code repository: <https://github.com/muesli/beehive>
+* YunoHost documentation for this app: <https://yunohost.org/app_beehive>
+* Report a bug: <https://github.com/YunoHost-Apps/beehive_ynh/issues>
 
 ## Developer info
 
 Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/beehive_ynh/tree/testing).
 
 To try the testing branch, please proceed like that.
-```
+
+``` bash
 sudo yunohost app install https://github.com/YunoHost-Apps/beehive_ynh/tree/testing --debug
 or
 sudo yunohost app upgrade beehive -u https://github.com/YunoHost-Apps/beehive_ynh/tree/testing --debug
 ```
 
-**More info regarding app packaging:** https://yunohost.org/packaging_apps
+**More info regarding app packaging:** <https://yunohost.org/packaging_apps>
