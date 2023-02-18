@@ -1,0 +1,7 @@
+SOURCE_URL=https://github.com/muesli/beehive/releases/download/v0.4.0/beehive_0.4.0_Linux_arm64.tar.gz
+SOURCE_SUM=d8ad07d68eadaa7b8a52df9c0b35b64902f6b9435096ccfad57ff7e20d262cd9
+SOURCE_SUM_PRG=sha256sum
+SOURCE_FORMAT=tar.gz
+SOURCE_IN_SUBDIR=false
+SOURCE_FILENAME=
+SOURCE_EXTRACT=true
