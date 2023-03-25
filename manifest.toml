@@ -12,7 +12,6 @@ maintainers = ["Anmol Sharma"]
 license = "AGPL-3.0-or-later"
 demo = "https://github.com/muesli/beehive/wiki/Available-Hives"
 code = "https://github.com/muesli/beehive"
-website = "https://github.com/muesli/beehive"
 
 [integration]
 yunohost = ">= 11.1.15"
