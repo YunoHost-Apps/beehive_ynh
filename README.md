@@ -38,6 +38,7 @@ Beehive is an event and agent system, which allows you to create your own agents
 
 ## Documentation and resources
 
+* Official app website: <https://github.com/muesli/beehive>
 * Upstream app code repository: <https://github.com/muesli/beehive>
 * YunoHost documentation for this app: <https://yunohost.org/app_beehive>
 * Report a bug: <https://github.com/YunoHost-Apps/beehive_ynh/issues>
