@@ -89,12 +89,12 @@ ynh_add_nginx_config
 #=================================================
 # UPDATE A CONFIG FILE
 #=================================================
-ynh_script_progression --message="Updating a configuration file..." --weight=1
+# ynh_script_progression --message="Updating a configuration file..." --weight=1
 
-ynh_add_config --template="../conf/beehive.conf" --destination="$final_path/beehive.conf"
+#ynh_add_config --template="../conf/beehive.conf" --destination="$final_path/beehive.conf"
 
-chmod 600 "$final_path/beehive.conf"
-chown $app:$app "$final_path/beehive.conf"
+#chmod 600 "$final_path/beehive.conf"
+#chown $app:$app "$final_path/beehive.conf"
 
 #=================================================
 # SETUP SYSTEMD
