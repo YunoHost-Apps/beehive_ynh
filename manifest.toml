@@ -5,7 +5,7 @@ name = "Beehive"
 description.en = "Flexible event/agent & automation system"
 description.fr = "Système flexible d'événement et d'automatisation"
 
-version = "0.4.0~ynh2"
+version = "0.4.0~ynh3"
 
 maintainers = []
 
