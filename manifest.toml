@@ -45,6 +45,11 @@ ram.runtime = "50M"
         armhf.url = "https://github.com/muesli/beehive/releases/download/v0.4.0/beehive_0.4.0_Linux_armv6.tar.gz"
         armhf.sha256 = "c1fa8f5a1935ee12f09a2bd9579281d64552897c597534361aba90ed992676fb"
 
+        autoupdate.strategy = "latest_github_release"
+        autoupdate.asset.arm64 = "^beehive_.*_Linux_arm64.tar.gz$"
+        autoupdate.asset.amd64 = "^beehive_.*_Linux_x86_64.tar.gz$"
+        autoupdate.asset.armhf = "^beehive_.*_Linux_armv6.tar.gz$"
+
     [resources.ports]
 
     [resources.system_user]
