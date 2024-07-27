@@ -5,7 +5,7 @@ It shall NOT be edited by hand.
 
 # Beehive for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/beehive.svg)](https://dash.yunohost.org/appci/app/beehive) ![Working status](https://ci-apps.yunohost.org/ci/badges/beehive.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/beehive.maintain.svg)
+[![Integration level](https://dash.yunohost.org/integration/beehive.svg)](https://ci-apps.yunohost.org/ci/apps/beehive/) ![Working status](https://ci-apps.yunohost.org/ci/badges/beehive.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/beehive.maintain.svg)
 
 [![Install Beehive with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=beehive)
 
@@ -28,13 +28,13 @@ Beehive is an event and agent system, which allows you to create your own agents
 - Notify you when a stock's price drops below a certain value
 
 
-**Shipped version:** 0.4.0~ynh3
+**Shipped version:** 0.4.0~ynh4
 
 **Demo:** <https://github.com/muesli/beehive/wiki/Available-Hives>
 
 ## Screenshots
 
-![Screenshot of Beehive](./doc/screenshots/screenshot1.gif)
+![Screenshot of Beehive](./doc/screenshots/screenshot1.jpg)
 
 ## :red_circle: Antifeatures
 

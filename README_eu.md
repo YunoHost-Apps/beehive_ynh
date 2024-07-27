@@ -5,7 +5,7 @@ EZ editatu eskuz.
 
 # Beehive YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/beehive.svg)](https://dash.yunohost.org/appci/app/beehive) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/beehive.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/beehive.maintain.svg)
+[![Integrazio maila](https://dash.yunohost.org/integration/beehive.svg)](https://ci-apps.yunohost.org/ci/apps/beehive/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/beehive.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/beehive.maintain.svg)
 
 [![Instalatu Beehive YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=beehive)
 
@@ -28,13 +28,13 @@ Beehive is an event and agent system, which allows you to create your own agents
 - Notify you when a stock's price drops below a certain value
 
 
-**Paketatutako bertsioa:** 0.4.0~ynh3
+**Paketatutako bertsioa:** 0.4.0~ynh4
 
 **Demoa:** <https://github.com/muesli/beehive/wiki/Available-Hives>
 
 ## Pantaila-argazkiak
 
-![Beehive(r)en pantaila-argazkia](./doc/screenshots/screenshot1.gif)
+![Beehive(r)en pantaila-argazkia](./doc/screenshots/screenshot1.jpg)
 
 ## :red_circle: Ezaugarri zalantzagarriak
 

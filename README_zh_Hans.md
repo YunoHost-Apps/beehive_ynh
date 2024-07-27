@@ -5,7 +5,7 @@
 
 # YunoHost 上的 Beehive
 
-[![集成程度](https://dash.yunohost.org/integration/beehive.svg)](https://dash.yunohost.org/appci/app/beehive) ![工作状态](https://ci-apps.yunohost.org/ci/badges/beehive.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/beehive.maintain.svg)
+[![集成程度](https://dash.yunohost.org/integration/beehive.svg)](https://ci-apps.yunohost.org/ci/apps/beehive/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/beehive.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/beehive.maintain.svg)
 
 [![使用 YunoHost 安装 Beehive](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=beehive)
 
@@ -28,13 +28,13 @@ Beehive is an event and agent system, which allows you to create your own agents
 - Notify you when a stock's price drops below a certain value
 
 
-**分发版本：** 0.4.0~ynh3
+**分发版本：** 0.4.0~ynh4
 
 **演示：** <https://github.com/muesli/beehive/wiki/Available-Hives>
 
 ## 截图
 
-![Beehive 的截图](./doc/screenshots/screenshot1.gif)
+![Beehive 的截图](./doc/screenshots/screenshot1.jpg)
 
 ## :red_circle: 负面特征
 
