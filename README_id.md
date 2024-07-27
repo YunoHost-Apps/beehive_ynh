@@ -28,7 +28,7 @@ Beehive is an event and agent system, which allows you to create your own agents
 - Notify you when a stock's price drops below a certain value
 
 
-**Versi terkirim:** 0.4.0~ynh3
+**Versi terkirim:** 0.4.0~ynh4
 
 **Demo:** <https://github.com/muesli/beehive/wiki/Available-Hives>
 
@@ -42,7 +42,7 @@ Beehive is an event and agent system, which allows you to create your own agents
 
 ## Dokumentasi dan sumber daya
 
-- Repositori kode aplikasi hulu: <https://github.com/muesli/beehive>
+- Depot kode aplikasi hulu: <https://github.com/muesli/beehive>
 - Gudang YunoHost: <https://apps.yunohost.org/app/beehive>
 - Laporkan bug: <https://github.com/YunoHost-Apps/beehive_ynh/issues>
 

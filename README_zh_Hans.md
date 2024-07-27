@@ -28,7 +28,7 @@ Beehive is an event and agent system, which allows you to create your own agents
 - Notify you when a stock's price drops below a certain value
 
 
-**分发版本：** 0.4.0~ynh3
+**分发版本：** 0.4.0~ynh4
 
 **演示：** <https://github.com/muesli/beehive/wiki/Available-Hives>
 
