@@ -5,7 +5,7 @@ Il NE doit PAS être modifié à la main.
 
 # Beehive pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/beehive.svg)](https://dash.yunohost.org/appci/app/beehive) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/beehive.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/beehive.maintain.svg)
+[![Niveau d’intégration](https://dash.yunohost.org/integration/beehive.svg)](https://ci-apps.yunohost.org/ci/apps/beehive/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/beehive.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/beehive.maintain.svg)
 
 [![Installer Beehive avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=beehive)
 
@@ -34,7 +34,7 @@ Beehive is an event and agent system, which allows you to create your own agents
 
 ## Captures d’écran
 
-![Capture d’écran de Beehive](./doc/screenshots/screenshot1.gif)
+![Capture d’écran de Beehive](./doc/screenshots/screenshot1.jpg)
 
 ## :red_circle: Anti-fonctionnalités
 
